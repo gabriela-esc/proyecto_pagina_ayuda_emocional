@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Fotitos.css">
+    </head>
+    <body>
+        <div class="menu">
+            <div><a href="index.html" class="boton">Casita</a></div>
+            <div><a href="music.html" class="boton">Música</a></div>
+            <div><a href="letter.html" class="boton">Palabritas</a></div>
+            <div><a href="reasons.html" class="boton">100 Razones</a></div>
+            <div><a href="SOS.html" class="boton">S.O.S.</a></div>
+        </div>
+
+
+        <div class="explicacion-div">
+            <div class="explicacion">
+                <p>A continuación encontrarás una serie de imágenes. Cada una representa un álbum, donde se reúnen fotos que te ayudarán a regular tu sistema emocional, según cómo te sientas.</p>
+                <p>Para ver la "emoción" del album, presiona unos segundos alguna imágen. Para entrar al album, presiona una única vez.</p>
+                <p>Una vez dentro del album, puedes navegar con las flechas que encontrarás en la parte inferior y para cerrarlo, debes dar click a la "X" en la parte superior.</p>
+                <p>¡Disfruta las imágenes, recuerda que este espacio es seguro y te peretence, úsalo como más te guste.</p>
+            </div>
+        </div>
+
+        <div class="carrusel">
+            <div class="hover-box">
+                <img src="img/fotitos1.jpg" data-galeria="reir">
+                <div class="tematica">Ansiedad</div>
+            </div>
+
+            <div class="hover-box">
+                <img src="img/fotitos1.jpg" data-galeria="ego">
+                <div class="tematica">Soledad</div>
+            </div>
+
+            <div class="hover-box">
+                <img src="img/fotitos1.jpg" data-galeria="hambre">
+                <div class="tematica">Tristeza</div>
+            </div>
+
+            <div class="hover-box">
+                <img src="img/fotitos1.jpg" data-galeria="llorar">
+                <div class="tematica">Desesperanza</div>
+            </div>
+
+            <div class="hover-box">
+                <img src="img/fotitos1.jpg" data-galeria="porquesi">
+                <div class="tematica">Estrés/Frustración</div>
+            </div>
+        </div>
+        
+
+        <div class="galeria" id="galeria">
+            <button id="cerrar">✖</button>
+            <img id="foto" src="">
+            <p class="descripcion" id="descripcion"></p>
+            <div class="controles">
+                <button id="anterior">⬅</button>
+                <button id="siguiente">➡</button>
+            </div>
+        </div>
+
+        <div id="pie">
+            <img class="mica-sello" src="img/micaela2.png">
+        </div>
+
+    <script src="galeria.js"></script>  
+    </body>
+</html>

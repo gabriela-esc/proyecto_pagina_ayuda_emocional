@@ -1,0 +1,119 @@
+html, body {margin:10px;padding:0px;background-color: #3DABDB;}
+body{max-width: 500px;font-family: 'Arial', sans-serif;padding: 20px;}
+
+/*Menú principal - contenedor*/
+.menu{
+  display:flex;
+  width:100%;
+  height:8%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+/*Menú principal - botones*/
+.boton{
+  padding:10px;
+  border-radius: 10px;
+  background-color: none;
+  color: rgb(255, 245, 227);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: small;
+  transition-duration: 2s;
+}
+/*Menú principal - botones transición*/
+.boton:active{
+  background-color: #bfe094;
+  font-weight: bolder;
+  font-size:large;
+  color:#3DABDB;
+}
+/*Texto explicativo*/
+.explicacion{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+  margin-top:8%;
+  color: rgb(255, 245, 227);
+}
+/*Carta y mensajes - botones*/
+.boton2 {
+  padding: 10px 15px;
+  background-color: #bfe094;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+/*Mensajes - botones transición*/
+.boton2:hover {background-color: #f2ffe1;}
+/*Mensajes - botones contenedor*/
+.botonera {
+  width:92%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5%;
+  justify-content: center;
+  background-image: url(img/Cielo_Anochecer.jpg);
+  background-size: cover;
+  padding:15px;
+  border-radius: 15px;
+}
+/*Texto: "Dime ¿cómo te sientes?"*/
+.dime{
+  display: flex;
+  justify-content: center;
+  font-size:small;
+  color:white;
+  font-weight: bolder;
+}
+/*Mensajes - contenedor oculto*/
+#caja-mensaje {
+  background-color: #ffffff;
+  border: 2px solid #3DABDB;
+  padding: 20px;
+  border-radius: 15px;
+  width: 72.5%;
+  margin: auto;
+  position: absolute;
+  top:35%;
+  left:9%;
+  display: none;
+}
+/*Mensajes - contenedor mostrar */
+#caja-mensaje.mostrar {display: block}
+/*Mensajes - contenedor botón cerrar*/
+#cerrar {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #3DABDB;
+}
+/*Mensajes - contenedor texto*/
+#contenido {
+  white-space: pre-wrap; /* respeta saltos de línea */
+  text-align: justify;
+}
+/*Pie*/
+#pie{
+  width:100%;
+  height:100px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-top: 45%;
+  background-color: #aee77f;
+  border-radius: 15px;
+}

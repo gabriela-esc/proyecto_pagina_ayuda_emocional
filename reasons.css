@@ -1,0 +1,74 @@
+html, body {margin:0px;padding:0px;background-color: white;}
+body{max-width: 500px;height: 600px;}
+/*Fondo*/
+.fondo{
+   width:100vw;
+   height: 100vh;
+   background-image: url(img/Almendros_Rio.gif); 
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-content: center;
+}
+/*Menú principal - contenedor*/
+.menu{
+   display:flex;
+   width:95%;
+   height:8%;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 15px;
+   padding: 10px;
+}
+/*Menú principal - botones*/
+.boton{
+   padding:10px;
+   border-radius: 10px;
+   background-color: none;
+   color:white;
+   text-decoration: none;
+   font-weight: bolder;
+   font-size: small;
+   transition-duration: 2s;
+}
+/*Menú principal - botones transición*/
+.boton:active{
+   background-color:#aee77f;
+   font-weight: bolder;
+   font-size:large;
+}
+/*Texto explicatio y razones - contenedor*/
+.contenedor-central{
+   display:flex;
+   flex:1;
+   align-items: center;
+   justify-content: center;
+}
+/*Texto explicativo y razones - sub contenedor*/
+.contenido{
+   width:80%;
+   height: fit-content;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align:center;
+   padding:20px;
+   color: rgb(0, 0, 0);
+   background-color: rgba(221, 109, 174, 0.315);
+   border-radius: 15px;
+}
+/*Texto explicativo y razones - botón para razones random*/
+.botoncito{
+   background-color: #8ed454;
+   border: none;
+   border-radius: 15px;
+   cursor:pointer;
+   padding:10px;
+}
+/*Texto explicativo y razones - razón*/
+.razon{margin-top: 10%;width:90%; font-weight: bold;}

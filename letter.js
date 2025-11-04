@@ -1,0 +1,26 @@
+const mensajes = {
+  carta: `💗Querida personita💗:\n\n Primero, necesito que respires...\n Otra vez... \n Una vez más... \n\nEstarás cansado, harto, decepcionado, triste o enojado. Y seguramente con mucha razón. Recuerda que decir "Basta" y "No" no te vuelve egoísta. Te puede hacer libre, sano, te vuelve tú. Recuerda que a veces viene bien soltar, tu valor no depende de las tareas que hagas en la lista de pendientes, porque a veces el acto más valiente del día es levantarse de la cama y seguir viviendo.\n\n Así que cuidate, no te compares con nadie, ve a tu ritmo y no te castigues por ser humana y fallar. \n\n Como dice Alonso Puig 'Aprender a perdonarse es un paso imprescindible para sanar las heridas del alma', hablate con amor, como si le hablaras a la persona que más amas. Nadie habita tu cuerpo más que tú y nadie podrá sostenerte más que tú, asi que cuidate porque eres lo más valioso que tienes y que jamás tendrás. \n\n Haz siempre lo que puedas y si eso significa parar y llorar, hazlo. Hoy te recuerdo que no necesitamos ser fuertes todo el tiempo y que está bien sentirnos tontos, que está bien cometer errores y está bien hacer esas cosas que decidimos no hacer, pero que por alguna razón son más fáciles decirlas que hacerlas. No le debes nada a nadie, estás aquí, respiras, sientes, ves, escuchas, es maravilloso y es suficiente. \n\n No eres una decepción. No eres un fracaso. No eres egoísta. No estás perdido y aún estás en la carrera. \n\n Espero que nunca olvides que tú eres tú no por las cosas que logra, ni las que no has hecho, sino por tu capacidad de seguir creyendo, tu gran corazón y el amor que pones en lo que te importa. \n\n Mereces amor, calma, mereces paciencia, respeto y dignidad y si nadie puede darte eso hoy, entonces intenta darte tú un poquito. Solo un poquito, porque yo estoy aquí contigo, preparada para acompañarte en esta aventura que es la vida. \n\n Todo pasa, así como un día fuiste feliz y hoy no te sientes bien, así también hoy te sientes mal, pero mañana será distinto y un día solo mirarás atrás y verás lo mucho que has crecido, todo lo que ha cambiado la vida y que etuviste ahí para ti, como la forma más pura y hermosa de amor. \n\n Con todo el amor que te pueden tener,\n\n Creo en ti, incluso cuando tú no.✨💖`,
+  msg1: "Ahora duele, sí. Pero todo pasa ❤️‍🩹, lo único que necesitas hacer es dejarte sentir, calma, todo estará bien, pero antes debes atravesar la tormenta 🍃. Las tormentas también limpian y quitan lo que ya no nos sirve, nos dejan espacio para lo nuevo 🌱. Solo tú sabes quién eres. Sobrevive y serás mejor y nunca olvides, que tienes a alguien con quien cruzar la tormenta.🫂✨",
+  msg2: "Primero que todo, 🥳me alegro enormemente de que te sientas feliz🥳. Quédate ahora con este momento y disfruta. Lo mereces absolutamente todo, tantas veces como sea posible. No culpas, no miedos. Disfruta cada segundo y recuerda, eres digno de todas las cosas buenas que la vida está esperando darte.⛅💖",
+  msg3: "Está bien estar enojados. En este espacio validamos el enojo, el enojo es humano. Lo importante ahora es que lo canalices, es importante aceptar que los demás tienen la capacidad de alterarnos, pero NUNCA de hacernos reaccionar mal. Así que exprésalo, déjalo salir, pero no dejes que te controle. Usa la fuerza para poner límites, defenderte, irte y hacer cambios. El fuego también es luz.",
+  msg4: "Cuando algo te disgusta (te hace sentir decepcionada, avergonzada, indecisa, repulsión) es importante prestar mucha atención a tu cuerpo. Escúchate porque seguramente sea algo que va en contra de quien eres y tu escencia. Así que concejo, protégete, aléjate y reacciona. Este no es tu sitio. Tienes libre albedrío, puedes decidir lo que sea y la vida es muy corta.",
+  msg5: "El miedo es parte de ser humanos, viene siempre con las decisiones que nos parecen más difíciles o importantes y está bien 🐣😮‍💨. En este espacio validamos el miedo. Pero ahora necesitas convertirlo en tu mejor aliado, puede ser paralizante, pero no dejes que te gane 🧠🏅. Míralo de frente como si fuera un igual. No necesitas no tener miedo, necesitas llevarlo hombro a hombro y actuar 👊💥. No esperes el momento indicado, porque no existe, simplemente hazlo. Cree en tí, yo creo en tí. Estoy aquí. Respira ¡TÚ PUEDES! ❤️✨",
+  msg6: "A veces la monotonia se convierte en nuestro peor enemigo, incluso aunque sea cómoda. Por eso la sorpresa viene para despertarte un poco. No siempre lo inesperado es malo (aunque algunas veces sí), pero intenta abrir tu corazón a lo nuevo, porque lo desconocido también puede ser  el inicio de algo maravilloso.🌈🌞"
+};
+
+const botones = document.querySelectorAll('[data-mensaje]');
+const caja = document.getElementById('caja-mensaje');
+const contenido = document.getElementById('contenido');
+const cerrar = document.getElementById('cerrar');
+
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const tipo = boton.dataset.mensaje;
+    contenido.textContent = mensajes[tipo] || "Mensaje no encontrado.";
+    caja.classList.add('mostrar');
+  });
+});
+
+cerrar.addEventListener('click', () => {
+  caja.classList.remove('mostrar');
+});

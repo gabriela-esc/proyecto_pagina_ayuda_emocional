@@ -1,0 +1,130 @@
+html, body {margin:10px;padding:0px;background-color: white;}
+body{max-width: 500px;height: 600px;}
+
+/*Menú principal - contenedor*/
+.menu{
+   display:flex;
+   width:100%;
+   height:8%;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   border-radius: 15px; 
+}
+/*Menú principal - botones*/
+.boton{
+   padding:10px;
+   border-radius: 10px;
+   background-color: none;
+   color:#aee77f;
+   text-decoration: none;
+   font-weight: bolder;
+   font-size: small;
+   transition-duration: 2s;
+}
+/*Menú principal - botones transición*/
+.boton:active{
+   background-color:#aee77f;
+   font-weight: bolder;
+   font-size:large;
+   color:white;
+}
+/*Texto explicativo*/
+.explicacion-div{
+   display:flex;
+   justify-content: center;
+   margin-top:5%;
+}
+.explicacion{
+   width:90%;
+   text-align: justify;
+   font-size: small;
+   padding:5%;
+   border-radius: 15px;
+   color:black;
+}
+/*Albumes - contenedor*/
+.carrusel{
+   margin-top: 3%;
+   width:100%;
+   height: 20%;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+/*Album - contenedor*/
+.hover-box{
+   position:relative;
+   height:100%;
+   cursor:pointer;
+   flex-shrink: 0;
+   display:flex;
+   align-items: center;
+}
+/*Album - portada*/
+.hover-box img{
+   transition-duration: 1s;
+   transition-property: all;
+   height:62%;
+   border-radius: 10px;
+   border: 2px solid #aee77f;
+}
+/*Album - portada transición*/
+.hover-box:active img{height:90%;opacity:10%;}
+/*Album - temática (oculta)*/
+.tematica{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%, -50%);
+   font-size:small;
+   text-align: center;
+   border-radius:10px;
+   transition:1s;
+   opacity:0;
+}
+/*Album - temática transición (Se muestra)*/
+.hover-box:active .tematica{opacity:1;}
+/*Galeria - contenedor*/
+.galeria{
+   display:none;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+   position:fixed;
+   inset:0;
+   background-color: rgba(255, 255, 255, 0.87);
+   z-index:999;
+}
+/*Galeria - imágenes*/
+.galeria img{
+   max-width:80%;
+   max-height: 60vh;
+   margin-bottom: 10px;
+   border-radius: 15px;
+}
+/*Galeria - botones (anterior, siguiente y cerrar)*/
+.controles button, #cerrar{
+   margin:0px;
+   padding-right:5px;
+   font-size:1.2rem;
+   cursor:pointer;
+   background-color: #3DABDB;
+   border-radius: 7px;
+}
+/*Galeria - descripción*/
+.descripcion{width: 80%;text-align: center;color:black;}
+/*Pie*/
+#pie{
+   width:100%;
+   height:15%;
+   display:flex;
+   align-items: center;
+   justify-content: flex-end;
+   justify-content: space-around;
+   margin-top: 72%;
+   background-color: #aee77f;
+   border-radius: 15px;
+}
+/*Ajuste de tamaño de imagen en el pie*/
+.mica-sello{height:70%;}
