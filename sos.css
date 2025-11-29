@@ -1,5 +1,12 @@
-html, body {margin:0px;padding:0px; background-image: url(img/sos-background.webp);}
-body{max-width: 500px;}
+html, body {
+   margin:0px;
+   padding:0px; 
+   background-image: url(img/Cielo_Anochecer.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
 /*Contenedor padre (abarca todo el body)*/
 .contenedor-padre{
    width: 100%;
