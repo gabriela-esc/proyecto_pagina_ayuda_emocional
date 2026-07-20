@@ -1,29 +1,29 @@
 //variable "galerias" para cada album
 const galerias = {
     reir: [
-      { src: "https://picsum.photos/300/200?random=1", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=2", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=3", desc: "imágen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=1", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=2", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=3", desc: "imagen random de ejemplo." },
     ],
     ego: [
-      { src: "https://picsum.photos/300/200?random=4", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=5", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=6", desc: "imágen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=4", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=5", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=6", desc: "imagen random de ejemplo." },
     ],
     hambre: [
-      { src: "https://picsum.photos/300/200?random=7", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=8", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=9", desc: "imágen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=7", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=8", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=9", desc: "imagen random de ejemplo." },
     ],
     llorar: [
-      { src: "https://picsum.photos/300/200?random=10", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=11", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=12", desc: "imágen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=10", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=11", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=12", desc: "imagen random de ejemplo." },
     ],
     porquesi: [
-      { src: "https://picsum.photos/300/200?random=13", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=14", desc: "imágen random de ejemplo." },
-      { src: "https://picsum.photos/300/200?random=15", desc: "imágen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=13", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=14", desc: "imagen random de ejemplo." },
+      { src: "https://picsum.photos/300/200?random=15", desc: "imagen random de ejemplo." },
     ]
   };
 

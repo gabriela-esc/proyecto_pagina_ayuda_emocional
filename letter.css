@@ -1,8 +1,37 @@
-html, body {margin:10px;padding:0px;background-color: #3DABDB;}
-body{max-width: 500px;font-family: 'Arial', sans-serif;padding: 20px;}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #3DABDB;
+}
+
+.menu,
+.explicacion,
+.titulo,
+.reproductor,
+.carrusel,
+.contenido1,
+.contenedor-central,
+#pie {
+  width: min(1100px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*Menú principal - contenedor*/
 .menu{
+  padding:4%;
   display:flex;
   width:100%;
   height:8%;
@@ -20,10 +49,10 @@ body{max-width: 500px;font-family: 'Arial', sans-serif;padding: 20px;}
   text-decoration: none;
   font-weight: bolder;
   font-size: small;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 /*Menú principal - botones transición*/
-.boton:active{
+.boton:hover{
   background-color: #bfe094;
   font-weight: bolder;
   font-size:large;

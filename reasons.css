@@ -1,7 +1,36 @@
-html, body {margin:0px;padding:0px;background-color: white;}
-body{max-width: 500px;height: 600px;}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.menu,
+.explicacion,
+.titulo,
+.reproductor,
+.carrusel,
+.contenido1,
+.contenedor-central,
+#pie {
+  width: min(1100px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*Fondo*/
 .fondo{
+   padding:4%;
    width:100vw;
    height: 100vh;
    background-image: url(img/Almendros_Rio.gif); 
@@ -33,10 +62,10 @@ body{max-width: 500px;height: 600px;}
    text-decoration: none;
    font-weight: bolder;
    font-size: small;
-   transition-duration: 2s;
+   transition-duration: 1s;
 }
 /*Menú principal - botones transición*/
-.boton:active{
+.boton:hover{
    background-color:#aee77f;
    font-weight: bolder;
    font-size:large;

@@ -1,8 +1,35 @@
-html, body {margin:10px;padding:0px;background-color: #ffffff;}
-body{max-width: 500px;height: 600px;}
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.menu,
+.explicacion,
+.titulo,
+.reproductor,
+.carrusel,
+.contenido1,
+.contenedor-central,
+#pie {
+  width: min(1100px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
 /*Menú principal - contenedor*/
 .menu{
+   padding:4%;
    display:flex;
    width:100%;
    height:8%;
@@ -20,7 +47,7 @@ body{max-width: 500px;height: 600px;}
    text-decoration: none;
    font-weight: bolder;
    font-size: small;
-   transition-duration: 2s;
+   transition-duration: 1s;
 }
 /*Menú principal - transición botones*/
 .boton:hover{
@@ -40,8 +67,8 @@ body{max-width: 500px;height: 600px;}
    text-align: center;
    background-image: url(img/Playa_Perro.gif);
    background-size:cover;
+   background-position: 0%;
    border-radius: 15px;
-   margin-top: 5%;
 }
 /*Texto explicativo*/
 #p1{
@@ -77,5 +104,3 @@ body{max-width: 500px;height: 600px;}
    border-radius: 15px;
    color: rgb(255, 245, 227);
 }
-/*Ajuste tamaño de imagen en el pie*/
-.mica-sello{height:70%;}

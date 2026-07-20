@@ -35,10 +35,10 @@ html, body {
    font-weight: bolder;
    font-size: small;
    color:white;
-   transition-duration: 2s;
+   transition-duration: 1s;
 }
 /*Menú principal - botones transición*/
-.boton:active{
+.boton:hover{
    background-color:rgba(0, 0, 0, 0.548);
    color:white;
    font-weight: bolder;
