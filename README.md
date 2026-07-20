@@ -8,7 +8,7 @@ Fue desarrollado con HTML, CSS y JavaScript, sin frameworks ni backend.
 
 Puedes ver el proyecto publicado aquí:
 
-[Ver aplicación](AÑADE_AQUÍ_EL_ENLACE_DE_GITHUB_PAGES)
+[Ver aplicación](https://gabriela-esc.github.io/proyecto_pagina_ayuda_emocional/)
 
 ## Funcionalidades
 
